@@ -1,0 +1,159 @@
+# Note 4 (SM-N9108V) debloat — disabled with root via `pm disable-user --user 0`.
+# Reversible: `tools\restore` logic or `pm enable <pkg>`. Backup in backup\note4-sm-n9108v.
+# Kept: phone, messages, contacts, settings, camera, gallery, clock, keyboard, Chrome, Play + GMS,
+# SystemUI, the TouchWiz launcher, Bluetooth/NFC, and the S Pen / S Note / Air Command suite.
+
+# --- China carrier bloat (Baidu, Wandoujia, Tencent, Amap, CMCC, UCS) ---
+com.baidu.searchbox_samsung
+com.wandoujia.phoenix2
+com.tencent.engine
+com.tencent.update
+com.amap.android.location
+com.samsung.cmccpaprovider
+com.samsung.ucs.agent.boot
+com.samsung.ucs.ucspinpad
+com.samsung.aasaservice
+com.samsung.sec.android.application.csc
+
+# --- Samsung content / stores / "smart" services ---
+com.sec.android.app.samsungapps
+com.sec.android.widgetapp.samsungapps
+com.samsung.android.sm
+com.samsung.android.sm.devicesecurity
+com.samsung.android.sm.policy
+com.samsung.android.sm.provider
+com.samsung.helphub
+com.samsung.android.scloud
+com.samsung.android.scloud.backup
+com.samsung.android.fmm
+com.samsung.android.app.galaxyfinder
+com.samsung.android.intelligenceservice
+com.samsung.android.intelligenceservice2
+com.samsung.android.providers.context
+com.samsung.dcm
+com.samsung.everglades.video
+com.samsung.hs20provider
+com.samsung.SMT
+com.sec.android.app.billing
+com.sec.android.app.moreservices
+com.sec.android.app.SamsungContentsAgent
+com.sec.android.app.personalization
+com.sec.android.app.ringtoneBR
+com.sec.android.app.sns3
+com.sec.android.app.snsimagecache
+com.sec.android.diagmonagent
+com.sec.android.Kies
+com.sec.android.preloadinstaller
+com.sec.android.app.mt
+com.sec.android.app.sysscope
+com.sec.android.app.taskmanager
+com.sec.android.app.dictionary
+com.sec.android.app.BlackScreen
+com.sec.android.app.interactivekeyguardtutorial
+com.sec.android.app.eventnotification
+com.sec.android.app.tourviewer
+com.sec.android.app.magnifier
+com.sec.android.app.filtermanager
+com.sec.android.filter
+com.sec.android.app.ocrseg
+com.sec.android.app.parser
+com.sec.android.app.chromecustomizations
+com.sec.android.app.themechooser
+com.sec.android.theme.natural
+com.sec.android.theme.chineseclassic
+com.sec.android.app.wallpaperchooser
+com.samsung.android.app.colorblind
+com.samsung.android.app.advsounddetector
+com.samsung.android.app.accesscontrol
+com.samsung.android.app.filterinstaller
+com.samsung.android.app.scrollcapture
+com.samsung.android.keyguardwallpaperupdator
+com.samsung.android.sdk.professionalaudio.utility.jammonitor
+com.samsung.android.sdk.professionalaudio.app.audioconnectionservice
+com.samsung.android.writingbuddyservice
+com.samsung.clipboardsaveservice
+com.samsung.android.clipboarduiservice
+com.sec.android.directshare
+com.sec.automation
+com.samsung.android.provider.filterprovider
+com.samsung.android.beaconmanager
+com.samsung.android.app.sreminder
+com.samsung.android.app.pinboard
+com.samsung.android.personalpage.service
+com.samsung.greetingcard
+com.sec.android.widget.greetingcardwidget
+com.samsung.festivalmanager
+com.samsung.festivalwallpaper
+com.sec.android.widget.festivalsawidget
+com.sec.android.widget.festivalmemorywidget
+
+# --- AllShare / casting / VR / MirrorLink / Gear (not used) ---
+com.samsung.android.allshare.service.fileshare
+com.samsung.android.allshare.service.mediashare
+com.samsung.android.app.FileShareClient
+com.samsung.android.app.FileShareServer
+com.samsung.android.nearby.mediaserver
+com.sec.allsharecastplayer
+com.samsung.android.sdk.samsunglink
+com.samsung.android.app.withtv
+com.samsung.android.hmt.vrshell
+com.samsung.android.hmt.vrsvc
+com.samsung.android.app.vrsetupwizardstub
+com.samsung.android.app.mirrorlink
+com.samsung.android.sconnect
+com.samsung.android.app.watchmanagerstub
+
+# --- Widgets we don't show on a clean home ---
+com.sec.android.widgetapp.dualclockdigital
+com.sec.android.widgetapp.dualcitywidget
+com.sec.android.widgetapp.SPlannerAppWidget
+com.sec.android.widgetapp.activeapplicationwidget
+com.sec.android.widgetapp.tapandpay
+com.sec.android.widgetapp.webManual
+com.sec.android.widgetapp.digitalclock
+com.sec.android.widgetapp.digitalclockeasy
+com.sec.android.widgetapp.ap.hero.cmaweather
+
+# --- Photo retouch / extra camera modes (core camera stays) ---
+com.sec.android.mimage.photoretouching
+com.sec.android.mimage.sstudio
+com.sec.android.app.storycam
+com.sec.di.SmartSelfShot
+com.sec.agif_maker
+com.samsung.app.slowmotion
+com.samsung.app.newtrim
+
+# --- Email / calendar (keeping Chrome, not the PIM apps) ---
+com.android.email
+com.android.exchange
+
+# --- Samsung browser (keeping Chrome) ---
+com.sec.android.app.sbrowser
+
+# --- Peel Smart Remote (TV remote bloat) ---
+tv.peel.smartremote
+
+# --- Flipboard Briefing ---
+flipboard.boxer.app
+
+# --- Knox / enterprise MDM (not used on a personal phone) ---
+com.samsung.klmsagent
+com.samsung.knox.appsupdateagent
+com.samsung.android.bbc.bbcagent
+com.samsung.android.mdm
+com.samsung.android.securitylogagent
+com.sec.enterprise.knox.attestation
+com.sec.enterprise.knox.myknoxsetupwizard
+com.sec.enterprise.knox.cloudmdm.smdms
+com.sec.enterprise.mdm.vpn
+com.sec.enterprise.mdm.services.simpin
+com.sec.knox.foldercontainer
+com.sec.knox.knoxsetupwizardclient
+com.sec.knox.switcher
+
+# --- One-handed / easy mode helpers ---
+com.sec.android.easyonehand
+com.sec.android.app.minimode.res
+com.sec.android.app.easylauncher
+com.sec.android.widgetapp.easymodecontactswidget
+com.samsung.android.easysetup

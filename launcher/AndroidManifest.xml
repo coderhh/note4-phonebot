@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hack.note4.launcher"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+
+    <application
+        android:label="CleanHome"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+        android:allowBackup="false">
+
+        <activity
+            android:name=".LauncherActivity"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

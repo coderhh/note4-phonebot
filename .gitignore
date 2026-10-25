@@ -1,0 +1,13 @@
+# build artifacts
+robot/build/
+launcher/build/
+*.apk
+*.keystore
+*.jks
+
+# the Termux APKs are downloaded, not source
+termux/*.apk
+
+# private device dumps and screenshots are kept local, never committed
+backup/
+shots/
